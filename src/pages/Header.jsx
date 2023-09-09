@@ -19,25 +19,25 @@ const Header = () => {
       <div className="box-border h-11 text-xl bg-primary rounded-full p-2 px-6 gap-2 items-center ">
         <Link
           to={"/"}
-          className="text-dark  mx-4 hover:transition duration-100 ease-in hover:text-[22px]"
+          className="text-dark  mx-4 hover:text-[22px] transition-all ease-in"
         >
           Home
         </Link>
         <Link
           to={"/marksheet"}
-          className="text-dark mx-4 hover:transition duration-100 ease-in hover:text-[22px]"
+          className="text-dark  mx-4 hover:text-[22px] transition-all ease-in"
         >
           MarkSheet{" "}
         </Link>
         <Link
           to={"/report"}
-          className="mx-4 text-dark hover:transition duration-100 ease-in hover:text-[22px] "
+          className="text-dark  mx-4 hover:text-[22px] transition-all ease-in "
         >
           Report Card{" "}
         </Link>
         <Link
           to={"/add"}
-          className="text-dark mx-4 hover:transition duration-100 ease-in hover:text-[22px] "
+          className="text-dark  mx-4 hover:text-[22px] transition-all ease-in"
         >
           {" "}
           Add
