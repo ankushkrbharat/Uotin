@@ -7,8 +7,8 @@ const Homepage = () => {
   return (
     <div>
       <Header />
-      <div className="w-full h-screen flex p-6">
-        <div className="w-3/7 gap-3 items-center">
+      <div className="flex max-lg:flex-col p-6">
+        <div className="md:w-3/7 max-md:w-full gap-3 items-center">
           <h1 className="text-8xl ">
             <span className="text-secondary">Create</span>
             <br />
@@ -18,7 +18,7 @@ const Homepage = () => {
               Visualisation
             </span>
           </h1>
-          <p className="w-4/11 mt-6">
+          <p className="w-4/11 max-md:w-full mt-6">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio vel
             et necessitatibus hic incidunt repellendus. Ex dicta esse eaque,
             quos velit quam soluta. Nam excepturi nihil modi delectus.

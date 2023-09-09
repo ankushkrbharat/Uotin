@@ -1,6 +1,10 @@
 import React from "react";
 import Header from "./Header";
 import Line from "./line.png";
+import Bar from "./barchart.png";
+import Pie from "./pie.png";
+import Scatter from "./scatter.png";
+import Area from "./area.png";
 import { Link } from "react-router-dom";
 
 const Create = () => {
@@ -21,40 +25,40 @@ const Create = () => {
         </div>
         <div className="p-3 hover:scale-110 transition-all ease-in">
         <Link className="items-center w-[300px]">
-          <img src={Line} alt="line-chart" className="" />
+          <img src={Bar} alt="line-chart" className="" />
           <Link className="flex gap-2 items-center bg-primary px-5 py-2 rounded text-3xl hover:bg-secondary align-middle">
             <div className=" flex items-center w-full align-middle justify-center">
-              Line Chart
+              Bar Chart
             </div>
           </Link>
         </Link>
         </div>
         <div className="p-3 hover:scale-110 transition-all ease-in">
         <Link className="items-center w-[300px]">
-          <img src={Line} alt="line-chart" className="" />
+          <img src={Area} alt="line-chart" className="" />
           <Link className="flex gap-2 items-center bg-primary px-5 py-2 rounded text-3xl hover:bg-secondary align-middle">
             <div className=" flex items-center w-full align-middle justify-center">
-              Line Chart
+              Area Chart
             </div>
           </Link>
         </Link>
         </div>
         <div className="p-3 hover:scale-110 transition-all ease-in">
         <Link className="items-center w-[300px]">
-          <img src={Line} alt="line-chart" className="" />
+          <img src={Scatter} alt="line-chart" className="" />
           <Link className="flex gap-2 items-center bg-primary px-5 py-2 rounded text-3xl hover:bg-secondary align-middle">
             <div className=" flex items-center w-full align-middle justify-center">
-              Line Chart
+              Scatter Chart
             </div>
           </Link>
         </Link>
         </div>
         <div className="p-3 hover:scale-110 transition-all ease-in">
         <Link className="items-center w-[300px]">
-          <img src={Line} alt="line-chart" className="" />
+          <img src={Pie} alt="line-chart" className="" />
           <Link className="flex gap-2 items-center bg-primary px-5 py-2 rounded text-3xl hover:bg-secondary align-middle">
             <div className=" flex items-center w-full align-middle justify-center">
-              Line Chart
+              Pie Chart
             </div>
           </Link>
         </Link>

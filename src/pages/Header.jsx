@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className=" box-border flex justify-between p-3 bg-white items-center h-30">
-      <div className="flex items-center box-border mx-6">
+    <div className=" w-full sm:box-border flex justify-between p-3 bg-white items-center h-30 max-md:justify-between">
+      <div className="flex items-center mx-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -16,7 +16,11 @@ const Header = () => {
 
         <div className="text-2xl text-black"> Uotin</div>
       </div>
-      <div className="box-border h-11 text-xl bg-primary rounded-full p-2 px-6 gap-2 items-center ">
+      <div className="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+  <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+</svg>
+</div>
+      <div className="box-border h-11 text-xl bg-primary rounded-full p-2 px-6 gap-2 items-center max-md:hidden ">
         <Link
           to={"/"}
           className="text-dark  mx-4 hover:text-[22px] transition-all ease-in"
@@ -43,7 +47,7 @@ const Header = () => {
           Add
         </Link>
       </div>
-      <div className="text-2xl mx-5 text-white ">
+      <div className="text-2xl mx-5 text-balck max-md:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
