@@ -28,23 +28,23 @@ const Header = () => {
           Home
         </Link>
         <Link
-          to={"/marksheet"}
+          to={"/createmap"}
           className="text-dark  mx-4 hover:text-[22px] transition-all ease-in"
         >
-          MarkSheet{" "}
+          Create Map{" "}
         </Link>
         <Link
-          to={"/report"}
+          to={"/visualisemap"}
           className="text-dark  mx-4 hover:text-[22px] transition-all ease-in "
         >
-          Report Card{" "}
+          Visualise map{" "}
         </Link>
         <Link
-          to={"/add"}
+          to={"/plots"}
           className="text-dark  mx-4 hover:text-[22px] transition-all ease-in"
         >
           {" "}
-          Add
+          Other tools
         </Link>
       </div>
       <a href="https://twitter.com/intent/tweet?text=Try%20Uotin" target="blank" className="text-2xl mx-5 text-balck max-md:hidden">

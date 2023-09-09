@@ -11,23 +11,21 @@ const Homepage = () => {
       <div className="flex max-lg:flex-col p-6">
         <div className="md:w-3/7 max-md:w-full gap-3 items-center">
           <h1 className="text-8xl ">
-            <span className="text-secondary">Create</span>
+            <span className="text-secondary">Visualise</span>
             <br />
             <span>
-              Data
+              Your 
               <br />
-              Visualisation
+              City Insights
             </span>
           </h1>
           <p className="w-4/11 max-md:w-full mt-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio vel
-            et necessitatibus hic incidunt repellendus. Ex dicta esse eaque,
-            quos velit quam soluta. Nam excepturi nihil modi delectus.
-            Cupiditate, magni?
+            Explore Your city and ask <span className="font-bold">Questions</span>  to people and <span className="font-bold">plot</span> them on Map.
+            Explore your <span className="font-bold">city's pulse</span>  with our platform. <span className="font-bold">Conduct surveys, gather data, and create dynamic maps</span> that showcase your findings, making your city come alive in just a few clicks.
           </p>
           <div className="flex gap-2 py-2 rounded-full items-center text-l mt-6">
             <Link
-              to={"/create"}
+              to={"/createmap"}
               className="flex gap-2 bg-primary px-5 py-2 rounded-full items-center text-3xl hover:bg-secondary"
             >
               <svg
@@ -48,7 +46,7 @@ const Homepage = () => {
                 />
               </svg>
 
-              <div>Create</div>
+              <div>Build Map</div>
             </Link>
             <p className="hover:text-opacity-75 text-dark cursor-pointer hover:underline">
               Read more About us

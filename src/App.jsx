@@ -8,6 +8,8 @@ import Barchart from './pages/Barchart'
 import Areachart from './pages/Areachart'
 import Scatterchart from './pages/Scatter'
 import Piechart from './pages/Piechart'
+import Mapbuilder from './pages/Mapbuilder'
+import Visualisemap from './pages/Visualisemap'
 
 function App() {
  
@@ -15,7 +17,9 @@ function App() {
   return (
     <Routes>
       <Route path={'/'} element={<Homepage/>} />
-      <Route path={'/create'} element={<Create/>} />
+      <Route path={'/createmap'} element={<Mapbuilder/>}/>
+      <Route path={'/visualisemap'} element={<Visualisemap/>}/>
+      <Route path={'/plots'} element={<Create/>} />
       <Route path={'/linechart'} element={<LChart/>} />
       <Route path={'/barchart'} element={<Barchart/>} />
       <Route path={'/areachart'} element={<Areachart/>} />
