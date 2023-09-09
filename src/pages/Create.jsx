@@ -25,7 +25,7 @@ const Create = () => {
         </Link>
         </div>
         <div className="p-3 hover:scale-110 transition-all ease-in">
-        <Link className="items-center w-[300px]">
+        <Link className="items-center w-[300px]" to={'/barchart'}>
           <img src={Bar} alt="line-chart" className="" />
           <Link className="flex gap-2 items-center bg-primary px-5 py-2 rounded text-3xl hover:bg-secondary align-middle">
             <div className=" flex items-center w-full align-middle justify-center">
@@ -35,7 +35,7 @@ const Create = () => {
         </Link>
         </div>
         <div className="p-3 hover:scale-110 transition-all ease-in">
-        <Link className="items-center w-[300px]">
+        <Link className="items-center w-[300px]" to={'/areachart'}>
           <img src={Area} alt="line-chart" className="" />
           <Link className="flex gap-2 items-center bg-primary px-5 py-2 rounded text-3xl hover:bg-secondary align-middle">
             <div className=" flex items-center w-full align-middle justify-center">
@@ -45,7 +45,7 @@ const Create = () => {
         </Link>
         </div>
         <div className="p-3 hover:scale-110 transition-all ease-in">
-        <Link className="items-center w-[300px]">
+        <Link className="items-center w-[300px] " to={'/scatterchart'}>
           <img src={Scatter} alt="line-chart" className="" />
           <Link className="flex gap-2 items-center bg-primary px-5 py-2 rounded text-3xl hover:bg-secondary align-middle">
             <div className=" flex items-center w-full align-middle justify-center">
@@ -55,7 +55,7 @@ const Create = () => {
         </Link>
         </div>
         <div className="p-3 hover:scale-110 transition-all ease-in">
-        <Link className="items-center w-[300px]">
+        <Link className="items-center w-[300px]" to={'/piechart'}>
           <img src={Pie} alt="line-chart" className="" />
           <Link className="flex gap-2 items-center bg-primary px-5 py-2 rounded text-3xl hover:bg-secondary align-middle">
             <div className=" flex items-center w-full align-middle justify-center">

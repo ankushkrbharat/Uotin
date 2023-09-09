@@ -8,7 +8,11 @@ export const data = [
   ["2004", 1000, 400],
   ["2005", 1170, 460],
   ["2006", 660, 1120],
-  ["2007", 1030, 540],
+  ["2008", 1030, 540],
+  ["2009", 1000, 400],
+  ["2010", 1170, 460],
+  ["2011", 660, 1120],
+  ["2012", 1030, 540],
 ];
 
 export const options = {
@@ -17,21 +21,17 @@ export const options = {
   legend: { position: "bottom" },
 };
 
-
-const LChart = () => {
+const Scatter = () => {
   return (
     <div><Header/>
-    <div>
-    <Chart
-      chartType="LineChart"
-      width="100%"
+    <div><Chart
+      chartType="ScatterChart"
+      width="80%"
       height="400px"
       data={data}
       options={options}
-    />
-    </div>
-    <Footer/></div>
+    /></div><Footer/></div>
   )
 }
 
-export default LChart
+export default Scatter
