@@ -6,6 +6,7 @@ import Pie from "./pie.png";
 import Scatter from "./scatter.png";
 import Area from "./area.png";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const Create = () => {
   return (
@@ -67,6 +68,7 @@ const Create = () => {
         
 
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import chart from "./account1.png";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const Homepage = () => {
   return (
@@ -40,8 +41,9 @@ const Homepage = () => {
         <div className="w-full">
           <img src={chart} alt="chart" />
         </div>
-      </div>
+      </div> <Footer/>
     </div>
+   
   );
 };
 
