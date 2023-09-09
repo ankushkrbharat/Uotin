@@ -20,8 +20,21 @@ export const options = {
 
 const LChart = () => {
   return (
-    <div><Header/>
     <div>
+      <Header/>
+    <div>
+    <div className=" bg-littlegray rounded h-full  absolute left-3/4 right-0 drop-shadow-md w-fit">
+          <div className="h-auto flex flex-col items-center p-2 gap-2">
+            <label>Title</label>
+            <input
+              type="text"
+              value={options.title}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              
+            />
+            </div>
+            </div>
+            
     <Chart
       chartType="LineChart"
       width="100%"
@@ -34,4 +47,4 @@ const LChart = () => {
   )
 }
 
-export default LChart
+export default LChart;

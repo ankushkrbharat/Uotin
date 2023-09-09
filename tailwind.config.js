@@ -13,6 +13,7 @@ export default {
       secondary:'#00EFAB',
       tertiary:'#6930C3',
       white:'#fff',
+      littlegray:'#f8fafa',
     },
     extend: {},
   },
