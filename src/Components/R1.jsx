@@ -6,25 +6,59 @@ import RM from "./rm.png"
 
 const R1 = () => {
 
-  const [color, setColor]=useState("#000")
+  const [color, setColor]=useState("#999");
+
   const widthc=window.innerWidth;
   // const heightc=window.innerHeight;
   const heightc=widthc*(683.35/1151.2)
  const size=Math.floor(widthc/50);
  const t=Math.floor(heightc/size)
- 
-  const div2=[]
 
-  for (let i = 50; i < 50+t; i++) {
-    div2.push(<div key={i} style={{width:size,height:size}} >s</div>);
+ 
+
+  const div2=[];
+  const [c,setC]=[];
+
+  for (let i = 0; i < t; i++) {
+    const colorset=(e)=>{
+      
+  
+      }
+    div2.push(<div key={i} style={{width:size,height:size,backgroundColor:color,opacity:0.4}} className="border" onClick={colorset} id={`${i}d`} ></div>);
+  
   }
 
   const n=50  // Change this to the number of divs you want to insert
   const divs = [];
 
   for (let i = 0; i < n; i++) {
-    divs.push(<div key={i} style={{width:size,height:size}} >{div2}</div>);
+    divs.push(<div style={{width:size,height:size}} id={`${i}d`} >{div2}</div>);
   }
+
+  // const rows = t;
+  // const cols = 50;
+  // const divs = [];
+
+  // // Generate a grid of divs with unique IDs
+  // for (let row = 0; row < rows; row++) {
+  //   for (let col = 0; col < cols; col++) {
+  //     const id = `${row}${col}`;
+  //     divs.push(
+  //       <div
+  //         key={id}
+  //         id={id}
+  //         style={{
+  //           width:size, // Set the width of each square
+  //           height:size, // Set the height of each square
+  //           backgroundColor:color, // Set the background color
+  //           border: '1px solid black',
+  //           opacity:0.4 // Set the border
+  //         }}
+  //         className="flex"
+  //       ></div>
+  //     );
+  //   }
+  // }
 
   
 
