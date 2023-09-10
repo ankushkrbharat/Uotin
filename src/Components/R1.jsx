@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../pages/Header";
 import Footer from "../pages/Footer";
 import "./R1.css"
@@ -7,12 +7,14 @@ import RM from "./rm.png"
 const R1 = () => {
 
   const [color, setColor]=useState("#999");
+  
 
   const widthc=window.innerWidth;
   // const heightc=window.innerHeight;
   const heightc=widthc*(683.35/1151.2)
  const size=Math.floor(widthc/50);
  const t=Math.floor(heightc/size)
+ const [sid, SetSid]=useState()
 
  
 
@@ -24,7 +26,7 @@ const R1 = () => {
       
   
       }
-    div2.push(<div key={i} style={{width:size,height:size,backgroundColor:color,opacity:0.4}} className="border" onClick={colorset} id={`${i}d`} ></div>);
+    div2.push(<div key={i} style={{width:size,height:size,backgroundColor:"#fff",opacity:0.4}} className="border" onClick={(e)=>{SetSid(e.target.id),console.log(sid)}} id={`${i}t`} ></div>);
   
   }
 
@@ -32,9 +34,18 @@ const R1 = () => {
   const divs = [];
 
   for (let i = 0; i < n; i++) {
+
     divs.push(<div style={{width:size,height:size}} id={`${i}d`} >{div2}</div>);
   }
 
+
+  for (let i = 0; i < n; i++) {
+    const outerdiv = document.getElementById(`#${i}d`)
+    for (let i = 0; i <t ; i++) {
+      const innerdiv = document.getElementById(`#${i}t`);
+      
+    }
+  }
   // const rows = t;
   // const cols = 50;
   // const divs = [];
