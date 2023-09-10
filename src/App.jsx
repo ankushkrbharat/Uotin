@@ -10,8 +10,9 @@ import Scatterchart from './pages/Scatter'
 import Piechart from './pages/Piechart'
 import Mapbuilder from './pages/Mapbuilder'
 import Visualisemap from './pages/Visualisemap'
-import Rourkela from './pages/Rourkela'
-import Rourkelazoom from './pages/Rourkelazoom'
+import R1 from './Components/R1'
+import R2 from './Components/R2'
+
 
 function App() {
  
@@ -21,8 +22,8 @@ function App() {
       <Route path={'/'} element={<Homepage/>} />
       <Route path={'/createmap'} element={<Mapbuilder/>}/>
       <Route path={'/visualisemap'} element={<Visualisemap/>}/>
-      <Route path={'/rourkela'} element={<Rourkela/>}/>
-      <Route path={'/rourkelazoom'} element={<Rourkelazoom/>}/>
+      <Route path={'/canvas1'} element={<R1/>}/>
+      <Route path={'/canvas2'} element={<R2/>}/>
       <Route path={'/plots'} element={<Create/>} />
       <Route path={'/linechart'} element={<LChart/>} />
       <Route path={'/barchart'} element={<Barchart/>} />
