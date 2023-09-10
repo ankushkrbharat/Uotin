@@ -11,6 +11,8 @@ import Piechart from './pages/Piechart'
 import Mapbuilder from './pages/Mapbuilder'
 import Visualisemap from './pages/Visualisemap'
 import Rourkela from './pages/Rourkela'
+import Rourkelazoom from './pages/Rourkelazoom'
+
 function App() {
  
 
@@ -20,7 +22,7 @@ function App() {
       <Route path={'/createmap'} element={<Mapbuilder/>}/>
       <Route path={'/visualisemap'} element={<Visualisemap/>}/>
       <Route path={'/rourkela'} element={<Rourkela/>}/>
-      <Route path={'/visualisemap'} element={<Visualisemap/>}/>
+      <Route path={'/rourkelazoom'} element={<Rourkelazoom/>}/>
       <Route path={'/plots'} element={<Create/>} />
       <Route path={'/linechart'} element={<LChart/>} />
       <Route path={'/barchart'} element={<Barchart/>} />
