@@ -24,9 +24,8 @@ const R1 = () => {
   for (let i = 0; i < t; i++) {
     const colorset=(e)=>{
       
-  
       }
-    div2.push(<div key={i} style={{width:size,height:size,opacity:0.4}} className="border hover:scale-125 hover:bg-secondary transition-all ease-in" onClick={(e)=>{SetSid(e.target.id),console.log(sid)}} id={`${i}t`} ></div>);
+    div2.push(<div key={i} style={{width:size,height:size,opacity:0.2,backgroundColor:""}} className="border hover:scale-125 hover:bg-secondary transition-all ease-in" onClick={(e)=>{style.backgroundColor=color}} id={`${i}t`} ></div>);
   
   }
 
